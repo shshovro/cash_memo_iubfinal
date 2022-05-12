@@ -1,21 +1,20 @@
 import random
-n = int(input("Enter the number of the cities : "))
-hot = []
-mild=[]
-cool=[]
-freezing=[]
+n         =int(input("Enter the number of the cities : "))
+hot       = []
+mild      =[]
+cool      =[]
+freezing  =[]
 x=0
-list= []
+list      =[]
 while len(list)!=n:
     list.append(random.uniform(-15,45))
     x=x+1
 print(list)
 print()
-h_counter  =0
+h_counter =0
 m_counter =0
-c_counter  =0
-f_counter   =0
-m=0
+c_counter =0
+f_counter =0
 while m!=n:
     if  list[m]>=28 and list[m]<=45:
         hot.append(list[m])
